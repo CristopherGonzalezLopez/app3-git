@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera aplicacion</title>
+
+ <!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ <link rel="stylesheet" href="css/temasapp3.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+ 
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/telefonou.jpg','imagenes/celulares.jpg','imagenes/celular.jpg','imagenes/historia2.jpg','imagenes/sustitucion1.jpg','imagenes/global.jpg')">
+ 
+<div data-role="page" id="principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn-text="Regresar"  data-back-btn-theme="a">
+     <h1>DEFINICION DE CONTAMINACION </h1>
+  </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>IMAGEN DE CONTAMINACION</h1>
+         <div>
+           <p> Se muestran imagenes</p>
+           <br>
+          </div>
+          <div>:<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/sustitucion1.jpg',1)"><img src="imagenes/sustitucion2.jpg" width="250" height="200" id="Image17"></a></div>
+        </div>
+       </div>
+       <div>
+        <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+           <li class="ui-first-child ui-last-child">
+              <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                 <h2>DEFINICION</h2>
+                 <p>Muestra una breve definicion </p>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+                 <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>TIPOS DE CONTAMINACION</h2>
+                  <p> Se muestra los tipos de contaminacion</p>
+                 </a> 
+                </li>
+                <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                      <h2>CONSECUENCIAS DE CONTAMINACION</h2>
+                      <p>Muestra las consecuencias de la contaminacion</p>
+                    </a>
+                 </li>
+                 <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina4" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>LAS TRES "R"</h2>
+                       <p> Muestra las tres r</p>
+                    </a>
+                  </li>
+                  <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina5" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>MEDIDAS PREVENTIVAS</h2>
+                       <p> Muestra algunas medidas</p>
+                    </a>
+                  </li>
+                   <li class="ui-first-child ui-last-child">
+                   <a href="#Pagina6" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>CONTAMINACION EN MI ENTORNO</h2>
+                        <p> Muestra algunas imagenes</p>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+               <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                  <div>
+                   <img src="imagenes/logo.png" width="46" height="46">
+                    </div>
+                    <div>
+                      <h4> Aplicacion Tres </h4>
+                      <h4> Gonzalez Lopez Cristopher</h4>
+                     </div>
+                    </div>
+                   </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                       <h1>DEFINICION </h1>
+                    </div>
+                         <div data-role="content" align="center">
+                       <img src="imagenes/contaminacion1.jpg" width="350" height="250" >
+                       <div>
+                        <p> La contaminación que se da sobre y contra el medio ambiente (que tantos los seres humanos como los animales y plantas utilizamos para vivir y desarrollarnos) se denomina contaminación ambiental, siendo la presencia en el ambiente de algún tipo de agente físico, químico o biológico o la combinación de alguno de estos, la que producirá este desequilibrio del que hablábamos más arriba y que resulta ser ampliamente nocivo para la salud, seguridad o bienestar de los habitantes de cualquier nación y por supuesto lo es también para el resto de los seres vivos, como las plantas y animales.</p>
+                       </div>
+                      </div>
+                      <div data-role="footer" data-theme="a" data-position="fixed">
+                        <h4>Aplicacion Tres, GLC</h4>
+                        </div>
+                       </div>
+                      </div>
+                      
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                           <h1>TIPOS DE CONTAMINACIÓN </h1>
+                          </div>
+                         <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+      <h1>Contaminación del Aire </h1>
+         <div>
+          <div>
+<p>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas.</P>
+
+<p>Algunos contaminantes del aire son tóxicos. Su inhalación puede aumentar las posibilidades de tener problemas de salud. Las personas con enfermedades del corazón o de pulmón, los adultos de más edad y los niños tienen mayor riesgo de tener problemas por la contaminación del aire. La polución del aire no ocurre solamente en el exterior: el aire en el interior de los edificios también puede estar contaminado y afectar su salud.</p>
+
+
+           <br>
+          </div>
+          <div>
+          <img src="imagenes/aire.jpg" width="247" height="212">
+          </div>
+           </div>
+           </div>
+           </div>
+           
+           <div data-role="content" align="center">
+          <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación del Suelo </h1>
+         <div>
+          <div>
+          <p>La contaminación del suelo se define por la presencia de determinado nivel de  partículas, sustancias o materiales contaminantes sólidos o líquidos que deterioran la superficie terrestre o la pérdida de una o más de sus funciones. Se considera que un suelo está contaminado cuando hay presencia de sustancias químicas o sintéticas, u otros tipos de alteraciones en el ambiente natural del sueño. Los contaminantes pueden estar física o químicamente enlazados a las partículas del suelo o atrapados entre éstas. </p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/suelo.jpg" width="200" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+           
+           
+                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación Sonora </h1>
+         <div>
+          <div>
+          <p>La contaminación sonora es producto del conjunto de sonidos ambientales nocivos que recibe el oído. El ruido como parte de la contaminación ambiental, afecta seriamente a la capacidad auditiva  provocando el envejecimiento prematuro del oído, sordera y daños irreversibles en el sistema auditivo. A la vez provoca otros trastornos en el organismo.
+Los efectos nocivos del ruido sobre la salud van desde las alteraciones cardiovasculares, falta de concentración, aumento del estrés, síndromes de depresión y del sueño hasta la disminución del apetito sexual, generando la disminución de la calidad de vida.
+Las sociedades modernas conviven con el ruido, pero desconocen sus efectos irreversibles. </p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/sonora.jpg" width="200" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+                        
+                        
+                             <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación Lumínica</h1>
+         <div>
+          <div>
+          <p>La luz artificial se está convirtiendo en un peligro para nuestra planeta. Esta no sólo afecta a la belleza natural, sino a seres humanos, los animales, las aves y la vegetación. Por lo tanto, el ciclo de vida de los seres vivos también está siendo afectada por la contaminación lumínica.
+
+Mucha gente no sabe acerca de la contaminación lumínica, sino que se ha extendido en casi todos los países del planeta tierra. Todo el mundo se enfrenta ahora al problema de la contaminación lumínica y mucha gente y los gobiernos son conscientes de sus efectos desastrosos.</p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/luminica.jpg" width="200" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+                              <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>Contaminación Térmica</h1>
+         <div>
+          <div>
+          <p>Es un hecho bien conocido que la quema de combustibles fósiles en centrales eléctricas, hornos industriales y motores de vehículos causa la contaminación del aire. Sin embargo, un menor impacto conocido asociado con estos procesos de generación de energía es la contaminación térmica. La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.</p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/termica.jpg" width="200" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+                     
+                         
+                         <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicaciones Tres, GLC</h4>
+                           </div>
+                            </div>
+                           </div>
+        
+                           
+                           
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                          <h1>CALENTAMIENTO GOBLAL</h1>
+                         </div>
+          <div data-role="content" align="center">
+          <div data-role="collapsible" data-content-theme="false">
+       <h1>DEFINICIÓN</h1>
+          <div>
+            <div>
+             <p>El término Calentamiento Global se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.
+Nadie pone en duda el aumento de la temperatura global, lo que todavía genera controversia es la fuente y razón de este aumento de la temperatura. </p>
+ 
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/global.jpg',1)"><img src="imagenes/global2.jpg" width="227" height="250" id="Image25"></a><br>
+            </div>
+           <div></div>
+           </div>
+           </div>
+           </div>
+                                          <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>CONSCUENCIAS</h1>
+         <div>
+          <div>
+          <p>EL CAMBIO CLIMÁTICO
+El cambio climático se esconde detrás de problemas de salud como las enfermedades provocadas por la falta de agua o las muertes fruto de fenómenos meteorológicos cada vez más violentos…
+
+<p>SMOG
+Smog es un una especie de combinación de humo, niebla y diversas partículas que se encuentran en la atmósfera de lugares con altos índices de contaminación. Esto es un fenómeno que se produce cuando el aire se queda en un mismo lugar por un largo tiempo y es cuando las partículas contaminantes quedan flotando en las capas inferiores de la atmósfera, gracias a que poseen mayor densidad.</p>
+<p>LLUVIA ÁCIDA
+La lluvia ácida es una de las consecuencias de la contaminación del aire. Cuando cualquier tipo de combustible se quema, diferentes productos químicos se liberan al aire. El humo de las fábricas, el que proviene de un incendio o  el que genera un automovil, no sólo contiene partículas de color gris (fácilmente visibles), sino que ademas poseen una gran cantidad de gases invisibles altamente perjudiciales para nuestro medio ambiente.</p>
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/consecuencia.jpg" width="271" height="186"> </div>
+           </div>
+           </div>
+           </div>
+                          
+                           <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicacion Tres, GLC</h4>
+                           </div>
+                            </div>
+                           </div>
+               
+                           
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                          <h1>LAS TRES "R"</h1>
+                         </div>
+                         <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1>REDUCIR</h1>
+         <div>
+          <div>
+          <p>Reduce: Esto puede realizarse en dos niveles Reducción de consumo de bienes y Reducción de consumo de energía significa que en primer lugar los seres humanos no deberíamos de producir tantos residuos, de ahí que lo más recomendable es tratar de REDUCIR o MINIMIZAR la generación de residuos ya sea en el hogar, trabajo o lugar de estudio.</p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/reducir.jpg" width="238" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+           
+                               <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1>REUTILIZAR</h1>
+         <div>
+          <div>
+          <p>Reutilizar: Es referible darle la máxima utilidad a los objetos si necesidad de tirarlas o destruirlas; significa alargar la vida de cada producto desde cuando se compra hasta cuando se tira. La mayoría de los bienes pueden tener más de una vida útil, sea reparándolos o utilizando la imaginación para darles otro uso. Por ejemplo, una botella de refresco se puede rellenar (el mismo uso) o se puede convertir en porta velas, cenicero, maceta o florero.</p>
+ 
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/reutilizar.jpg" width="242" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+           
+           
+                             <div data-role="content" align="center">
+                                                       <div data-role="collapsible" data-content-theme="false">
+       <h1>RECICLAR</h1>
+         <div>
+          <div>
+          <p>Reciclar: Es la "R" más común y menos eficaz. Se refiere a rescatar lo posible de un material que ya no sirve para nada (comúnmente llamado basura) y convertirlo en un producto nuevo. Por ejemplo, una caja vieja de cartón se puede triturar y a través de un proceso industrial o casero convierte a papel nuevo. Lo bueno del reciclaje es que actualmente casi todo tipo de basura se puede reciclar y muchos municipios ya lo tienen integrado a su sistema de recolección de basura.</p>
+ 
+           <br>
+          </div>
+           <div>
+            <img src="imagenes/reciclar.jpg" width="244" height="250">
+           </div>
+           </div>
+           </div>
+           </div>
+           
+                           <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicacion Tres, GLC</h4>
+                           </div>
+                           </div>
+                           </div>
+          
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                               <h1>Medidas Preventivas.</h1>
+                         </div>
+                         <div data-role="content" align="center">
+                           <div>
+                           <p> En los últimos días, los niveles de contaminación en la ciudad de México ha sobrepasado los límites del índice de calidad del aire. Esto provoca un peligro inminente para la salud de los habitantes, pues la niebla que invade a la ciudad posee componentes tóxicos que impacta negativamente en el cuerpo.
+Ante la emergencia sanitaria, las autoridades han decidido tomar medidas a corto plazo para combatir esta crisis ambiental; por ejemplo, brindar servicio gratuito en toda la red del metro, fomentar el uso de bicicletas, transporte público o andar a pie, etcétera.</p>
+<p>– Afina y da mantenimiento a los automóviles
+
+– Evita quemar basura y llantas, así como el uso de cohetes artificiales
+
+– Evita comprar artículos desechables y plásticos que no son biodegradables.
+
+– Recicla la basura
+
+– No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa
+
+– Usa racionalmente los plaguicidas
+
+– Evita el consumo de tabaco</p>
+
+</div>
+                           <img src="imagenes/contaminacion2.jpg" width="250" height="200">
+                           </div>
+                           <div data-role="footer" data-theme="a" data-position="fixed">
+                            <h4>Aplicacion Tres, GLC</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                      <h1>Visor de imagenes </h1>
+                    </div>
+                    <div>
+                     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco.jpg" alt="atlixco" title="atlixco" id="wows1_0"/></li>
+		<li><img src="data1/images/atlixco2.jpg" alt="atlixco2" title="atlixco2" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco3.jpg" alt="atlixco3" title="atlixco3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/atlixco4.jpg" alt="slider" title="atlixco4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/atlixco5.jpg" alt="atlixco5" title="atlixco5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atlixco"><span><img src="data1/tooltips/atlixco.jpg" alt="atlixco"/>1</span></a>
+		<a href="#" title="atlixco2"><span><img src="data1/tooltips/atlixco2.jpg" alt="atlixco2"/>2</span></a>
+		<a href="#" title="atlixco3"><span><img src="data1/tooltips/atlixco3.jpg" alt="atlixco3"/>3</span></a>
+		<a href="#" title="atlixco4"><span><img src="data1/tooltips/atlixco4.jpg" alt="atlixco4"/>4</span></a>
+		<a href="#" title="atlixco5"><span><img src="data1/tooltips/atlixco5.jpg" alt="atlixco5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+
+               <div data-role="content" align="center">
+                            <div data-role="collapsible" data-content-theme="false">
+       <h1>RECOMENDACIONES PARA LA CONTAMINACIÓN EN MI ENTORNO</h1>
+         <div>
+          <div>
+          <h2>Mis recomendaciones serian varias como poner contenedores de basura en las esquinas , o al menos poner un horario fijo para tirar la basura para que no se haga un revoltijo y multar a aquellos que rompan ese horario o que tiren basura fuera de los dias o horarios establecidos. </h2>
+ 
+           <br>
+          </div>
+           <div>
+           </div>
+           </div>
+           </div>
+           </div>
+
+                                                       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>PAGINA WEB DE UNA ORGANIZACIÓN</h1>
+         <div>
+          <div>
+           <p>SE MUESTRA UNA IMAGEN DE LA ORGANIZACIÓN</P>
+           <br>
+          </div>
+           <div>
+          <img src="imagenes/cemdalogo.gif" width="200" height="250">
+          <address>
+           vista la pagina <a href="https://www.cemda.org.mx/" target="_self">clikc</a>
+           </address>
+           </div>
+           </div>
+           </div>
+           </div>
+           
+
+                      <div data-role="footer" data-theme="a" data-position="fixed">
+                        <h4>Aplicacion Tres, GLC</h4>
+                        </div>
+                       </div>
+                      </div>
+                                                  
+</head>
+</body>
+</html>
